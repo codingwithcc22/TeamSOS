@@ -6,22 +6,23 @@
 // =============================================================
 
 export const project = {
-  teamName: 'TODO: Team Name',
-  appName: 'Community Compass',
+  teamName: 'TeamSOS',
+  appName: 'TBD',
   tagline: 'Find help nearby, in plain language.',
 
   // One or two sentences. Who is hurting, and how?
   problemStatement:
-    'TODO: Families in our neighborhood struggle to find free food, health, and youth programs because the information is scattered and hard to read.',
+    "Our app helps society's most vulnerable groups (who) to stay safe while traveling alone (do what) by using AI to assign a volunteer to act as a digital supervisor.",
 
   // One specific person. Give them a name, an age, and a situation.
-  targetUser: 'TODO: Maria, 34, a parent of two who works evenings and searches on her phone.',
+  targetUser: 'Alicia, solo-traveler, 23-29, vacationing, exploring the city by herself.',
 
-  community: 'TODO: Chicago, IL',
-  theme: 'TODO: Education Access / Global Health / Clean Water / Climate / Child Protection',
+  community: 'New York, NY',
+  theme: 'Emergency Response',
 
   // How you will know it works. Make it measurable.
-  successMeasure: 'TODO: A parent can find a matching resource in under 2 minutes.',
+  successMeasure:
+    "The trusted contact/volunteer contact has received an alert with the user's live location within seconds of an SOS trigger - manual or AI flagged, and knows the user may need help.",
 
   teamMembers: [
     { name: 'TODO', role: 'Product owner (writes tickets)' },
