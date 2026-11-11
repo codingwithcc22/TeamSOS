@@ -13,13 +13,13 @@ It runs on day one with no key and no database (sample data + mock AI), so you c
 
 | | |
 |---|---|
-| **Team name** | TODO |
-| **App name** | TODO |
-| **Problem statement** | TODO: Who is struggling, and how? |
-| **Target user** | TODO: One person, with a name and a situation |
-| **Community** | TODO: City, neighborhood |
-| **Theme** | TODO: Climate / Education Access / Global Health / Clean Water / Child Protection |
-| **How we'll know it works** | TODO: Something measurable |
+| **Team name** | TeamSOS |
+| **App name** | TBD |
+| **Problem statement** | Our app helps society's most vulnerable groups (who) to stay safe while traveling alone (do what) by using AI to assign a volunteer to act as a digital supervisor. |
+| **Target user** | Alicia, solo-traveler, 23-29, vacationing, exploring the city by herself. |
+| **Community** | New York, NY |
+| **Theme** | Emergency Response |
+| **How we'll know it works** | The trusted contact/volunteer contact has received an alert with the user's live location within seconds of an SOS trigger - manual or AI flagged, and knows the user may need help. |
 
 | Name | Role |
 |---|---|
