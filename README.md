@@ -14,7 +14,7 @@ It runs on day one with no key and no database (sample data + mock AI), so you c
 | | |
 |---|---|
 | **Team name** | TeamSOS |
-| **App name** | TBD |
+| **App name** | NYC Backup |
 | **Problem statement** | Our app helps society's most vulnerable groups (who) to stay safe while traveling alone (do what) by using AI to assign a volunteer to act as a digital supervisor. |
 | **Target user** | Alicia, solo-traveler, 23-29, vacationing, exploring the city by herself. |
 | **Community** | New York, NY |
