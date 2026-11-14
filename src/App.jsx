@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import TripMap from './components/TripMap.jsx';
 
 const Icon = ({ name, ...props }) => {
   const paths = {
@@ -159,13 +160,7 @@ export default function App() {
             </div>
             {hasTrip ? (
               <>
-                <div className="route-visual" aria-label={`Route from ${trip.from} to ${trip.to}`}>
-                  <div className="route-line" />
-                  <div className="route-stops">
-                    <div className="route-stop"><span className="route-pin" /><div><small>Starting at</small><strong>{trip.from}</strong></div></div>
-                    <div className="route-stop end"><span className="route-pin" /><div><small>Heading to</small><strong>{trip.to}</strong></div></div>
-                  </div>
-                </div>
+                <TripMap from={trip.from} to={trip.to} />
                 <div className="trip-facts">
                   <div className="fact"><span className="fact-label"><Icon name="clock" /> Planned arrival</span><strong className="fact-value">{arrivalTime}</strong></div>
                   <div className="fact"><span className="fact-label"><Icon name="calendar" /> Check-in reminder</span><strong className="fact-value">Every {trip.checkInMinutes} minutes</strong></div>
@@ -182,10 +177,7 @@ export default function App() {
               </>
             ) : (
               <>
-                <div className="route-visual" aria-hidden="true"><div className="route-line" /><div className="route-stops">
-                  <div className="route-stop"><span className="route-pin" /><div><small>Starting at</small><strong>Somewhere in NYC</strong></div></div>
-                  <div className="route-stop end"><span className="route-pin" /><div><small>Heading to</small><strong>Your next stop</strong></div></div>
-                </div></div>
+                <TripMap />
                 <div className="trip-facts">
                   <div className="fact"><span className="fact-label"><Icon name="clock" /> Planned arrival</span><strong className="fact-value">{status === 'cancelled' ? 'Trip ended' : 'Not set yet'}</strong></div>
                   <div className="fact"><span className="fact-label"><Icon name="calendar" /> Check-in reminder</span><strong className="fact-value">Your choice</strong></div>
