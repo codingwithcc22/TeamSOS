@@ -1,0 +1,25 @@
+.trip-map-shell { margin-bottom: 20px; border: 1px solid var(--line); border-radius: 17px; overflow: hidden; background: var(--navy-soft); }
+.trip-map-labels { display: flex; justify-content: space-between; gap: 20px; padding: 16px 18px; }
+.trip-map-labels .route-stop { flex: 1; }
+.trip-map-labels .route-stop strong { font-size: 13px; }
+.trip-map-frame { position: relative; isolation: isolate; }
+.trip-map-canvas { width: 100%; height: clamp(270px, 32vw, 350px); background: var(--surface); font-family: var(--font-body); z-index: 0; }
+.trip-map-badge { position: absolute; top: 12px; right: 12px; z-index: 1; pointer-events: none; padding: 7px 10px; border: 1px solid var(--line); border-radius: 9px; color: var(--navy-deep); background: var(--card); box-shadow: 0 2px 10px #132d5517; font: 600 11px var(--font-head); }
+.trip-map-shell .trip-map-note { padding: 10px 14px; margin: 0; color: var(--muted); font-size: 11px; line-height: 1.5; background: var(--card); }
+.trip-map-marker { border: 3px solid white; border-radius: 50%; background: var(--teal); color: white; box-shadow: 0 2px 8px #132d5544; display: grid; place-items: center; font: 700 12px var(--font-head); }
+.trip-map-marker.destination { background: #1b3a6b; border-radius: 8px; }
+.trip-map-shell .leaflet-control-zoom { border: 1px solid var(--line); border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px #132d5517; }
+.trip-map-shell .leaflet-control-zoom a { color: var(--ink); background: var(--card); border-color: var(--line); }
+.trip-map-shell .leaflet-control-zoom a:hover { background: var(--navy-soft); }
+.trip-map-shell .leaflet-popup-content-wrapper, .trip-map-shell .leaflet-popup-tip { background: var(--card); color: var(--ink); }
+.trip-map-shell .leaflet-popup-content { font: 13px/1.5 var(--font-body); }
+.trip-map-shell .leaflet-control-attribution { font-size: 10px; background: var(--card); color: var(--muted); }
+.trip-map-shell .leaflet-control-attribution a { color: var(--navy); }
+.trip-map-shell .leaflet-container:focus-visible { outline: 3px solid var(--amber); outline-offset: -3px; }
+[data-theme="dark"] .trip-map-shell .leaflet-tile-pane { filter: invert(.9) hue-rotate(180deg) brightness(.8) saturate(.65); }
+@media (max-width: 520px) {
+  .trip-map-labels { padding: 13px; gap: 12px; }
+  .trip-map-labels .route-stop strong { font-size: 12px; }
+  .trip-map-canvas { height: 280px; }
+  .trip-map-badge { font-size: 10px; }
+}
